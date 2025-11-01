@@ -3,7 +3,7 @@ layout: default
 title: HTB DarkZero — Short Writeup
 ---
 
-# Hack The Box — DarkZero (Hard) — GitHub Pages Friendly
+# Hack The Box — DarkZero (Hard)
 
 Short explanations precede each preserved code+output block. Code and outputs kept verbatim for reproducibility.
 
