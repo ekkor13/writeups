@@ -1,6 +1,5 @@
-# Hack The Box — DarkZero (Hard) — Write‑Up (First‑Person)
+# Hack The Box — DarkZero (Hard) — Write‑Up 
 
-> ## Ultra‑Short Plan
 > 1) Enumerate MSSQL → find linked server
 > 2) Enable xp_cmdshell → remote command exec
 > 3) Host + deliver payload → get meterpreter
@@ -10,7 +9,6 @@
 
 ---
 
-## Recon
 I added the domain mapping for resolution.
 
 ```bash
@@ -23,7 +21,6 @@ echo "10.129.26.13 DC01.darkzero.htb DC01 darkzero.htb" >> sudo tee -a /etc/host
 I authenticated to MSSQL and enumerated the linked server.
 
 ```text
-# (FULL original command + response preserved)
 impacket-mssqlclient john.w@dc01.darkzero.htb -windows-auth
 ...
 SQL (darkzero\john.w  guest@master)> enum_links
@@ -163,5 +160,5 @@ type user.txt
 
 ---
 
-> **Note:** All command+response blocks remain intact. I only added short first‑person context lines; I did not modify command or output contents.
+
 
